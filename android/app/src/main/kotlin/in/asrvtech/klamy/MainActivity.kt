@@ -1,4 +1,4 @@
-package com.example.klamy
+package `in`.asrvtech.klamy
 
 import io.flutter.embedding.android.FlutterActivity
 

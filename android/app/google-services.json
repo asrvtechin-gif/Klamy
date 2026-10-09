@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1060317334078",
+    "firebase_url": "https://klamy-8789e-default-rtdb.firebaseio.com",
+    "project_id": "klamy-8789e",
+    "storage_bucket": "klamy-8789e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060317334078:android:2e4f49f2309083c33a5f6f",
+        "android_client_info": {
+          "package_name": "in.asrvtech.klamy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060317334078-cunovo1h0hobdhcvfsgt61ls0srmrvba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAszPqHaM7ccKxCuUzEv0JXYP8aX4id524"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060317334078-cunovo1h0hobdhcvfsgt61ls0srmrvba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
