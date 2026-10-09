@@ -13,6 +13,8 @@
 migrate_working_dir/
 .metadata
 pubspec.lock
+ios/Runner.xcodeproj/project.pbxproj
+web/manifest.json
 # IntelliJ related
 *.iml
 *.ipr

@@ -7,6 +7,7 @@ plugins {
 }
 
 android {
+
     namespace = "in.asrvtech.klamy"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
@@ -30,7 +31,14 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
-
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("C:/Users/Shubham Singh/.android/debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
