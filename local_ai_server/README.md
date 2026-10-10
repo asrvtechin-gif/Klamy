@@ -1,4 +1,4 @@
-# Klamy local Qwen server
+# Klamy local Gemini server
 
 This gateway sends claim questions to the laptop's Ollama instance using only `qwen3-vl:latest`. It verifies Firebase sign-in, reads the signed-in user's claim and vault records from Realtime Database, downloads only that user's Cloudinary documents, and never calls Gemini or another hosted model.
 
