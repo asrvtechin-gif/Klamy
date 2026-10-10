@@ -102,11 +102,6 @@ class ProfilePage extends StatelessWidget {
               onTap: () => Get.to(() => NotificationPage()),
             ),
             _buildProfileTile(
-              Icons.help_outline_rounded,
-              'help_support'.tr,
-              onTap: () => _showHelpDialog(context),
-            ),
-            _buildProfileTile(
               Icons.support_agent_rounded,
               'contact_us'.tr,
               subtitle: 'asrvtech.in@gmail.in',
