@@ -1,0 +1,35 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid",
+        "claims": {
+          "$claimId": {
+            ".validate": "newData.hasChildren(['title', 'insurer', 'policyNumber', 'policyHolder', 'policyStartDate', 'policyEndDate', 'patientName', 'hospitalName', 'amount', 'admissionDate', 'documents', 'status', 'createdAt'])"
+          }
+        },
+        "actions": {
+          "$actionId": {
+            ".validate": "newData.hasChildren(['title', 'claimId', 'done', 'category', 'createdAt'])"
+          }
+        },
+        "complaints": {
+          "$complaintId": {
+            ".validate": "newData.hasChildren(['claimId', 'claimTitle', 'insurer', 'irdaToken', 'status', 'createdAt', 'updatedAt'])"
+          }
+        },
+        "notifications": {
+          "$notificationId": {
+            ".validate": "newData.hasChildren(['title', 'body', 'category', 'isRead', 'createdAt'])"
+          }
+        },
+        "fcmTokens": {
+          "$tokenId": {
+            ".validate": "newData.hasChildren(['token', 'updatedAt'])"
+          }
+        }
+      }
+    }
+  }
+}
